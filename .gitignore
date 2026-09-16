@@ -1,0 +1,11 @@
+# Vercel (не используется на Timeweb)
+.vercel
+
+# macOS
+.DS_Store
+
+# Плумбинг автопубликатора — не в репозиторий
+*.command
+.publish-request
+.publish-status
+PUBLISH-FAILED.txt

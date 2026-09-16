@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Контакты и запись — Злата, психолог</title>
+<meta name="description" content="Написать Злате: Telegram, WhatsApp, форма обратной связи. Все ресурсы и каналы в одном месте.">
+<meta property="og:title" content="Контакты и запись — Злата, психолог">
+<meta property="og:description" content="Написать Злате: Telegram, WhatsApp, форма обратной связи. Все ресурсы и каналы в одном месте.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%236B4A3A'/><text y='68' x='50' text-anchor='middle' font-size='58' font-family='Georgia' fill='%23F5EFE8'>&#1047;</text></svg>">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="index.html">
+      <span class="logo-mark">&#1047;</span>
+      <span class="logo-text">
+        <span class="logo-name">Злата</span>
+        <span class="logo-sub">Психолог</span>
+      </span>
+    </a>
+    <button class="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="about.html">Обо мне</a>
+      <a href="formats.html">Как работаем</a>
+      <a href="schedule.html">Расписание</a>
+      <a href="articles.html">Статьи</a>
+      <a href="contacts.html" class="active">Контакты</a>
+      <a class="btn btn-primary" href="contacts.html#zapis">Записаться</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Контакты</p>
+    <h1>Написать мне</h1>
+    <p class="lead">Не нужно формулировать запрос красиво и «правильно». Достаточно пары строк о том, что происходит, — дальше разберёмся вместе.</p>
+  </div>
+</section>
+
+<section id="zapis">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <h2>Как связаться</h2>
+      <div id="contact-lines" class="mt-2"></div>
+
+      <div class="card mt-3" style="background:var(--sand-100)">
+        <h3>Что написать в первом сообщении</h3>
+        <p class="mb-0">Достаточно имени и пары строк о том, с чем сейчас тяжело. Если не знаете, какой формат подойдёт, — так и напишите, я подскажу. Отвечаю обычно в течение дня.</p>
+      </div>
+
+      <div class="disclaimer mt-3" data-disclaimer></div>
+    </div>
+
+    <div class="reveal">
+      <div class="form-card">
+        <h3 style="margin-bottom:.8em">Оставить заявку</h3>
+        <form id="lead-form" method="POST">
+          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="field">
+            <label for="f-name">Как вас зовут?</label>
+            <input type="text" id="f-name" name="name" placeholder="Имя" autocomplete="name">
+            <div class="err">Как к вам обращаться?</div>
+          </div>
+
+          <div class="field">
+            <label for="f-contact">Как с вами связаться? <span class="hint">Telegram, почта или телефон</span></label>
+            <input type="text" id="f-contact" name="contact" placeholder="@ник, почта или +7…">
+            <div class="err">Оставьте контакт — иначе я не смогу ответить</div>
+          </div>
+
+          <div class="field">
+            <label for="f-about">Что происходит? <span class="hint">Необязательно, но помогает</span></label>
+            <textarea id="f-about" name="about" placeholder="Пара строк своими словами. Совсем не обязательно объяснять всё — достаточно того, с чем сейчас тяжело."></textarea>
+          </div>
+
+          <label class="consent">
+            <input type="checkbox" name="consent" value="да">
+            <span>Согласен(-на) на обработку моих данных для ответа на обращение. Всё, что вы напишете, останется между нами.</span>
+          </label>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Отправить</button>
+          <p class="small muted center mt-2 mb-0">Отвечаю обычно в течение дня.</p>
+        </form>
+
+        <div id="form-success" class="form-success">
+          <div class="tick">&#10003;</div>
+          <h3>Спасибо, я получила</h3>
+          <p class="muted">Отвечу в течение дня. Если вдруг не отвечу — напишите, пожалуйста, в Telegram: иногда письма теряются, а вы важнее письма.</p>
+          <a class="btn btn-ghost" data-tg="Здравствуйте, Злата. Отправила заявку с сайта.">Написать в Telegram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-sand">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Все мои ресурсы</h2>
+      <p class="lead">Основное — в Telegram: там анонсы открытых разборов, короткие тексты и наблюдения после встреч.</p>
+    </div>
+    <div class="links-grid reveal" data-links></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Злата — психолог</h4>
+        <p style="margin-bottom:14px">Глубинная работа с причиной, терапевтические расстановки, малые группы. Онлайн, по-русски — из любой точки мира.</p>
+        <a class="btn btn-ghost" style="color:var(--sand-100);border-color:rgba(245,239,232,.4)" data-tg="Здравствуйте, Злата. Хочу записаться на встречу.">Написать в Telegram</a>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <ul>
+          <li><a href="about.html">Обо мне</a></li>
+          <li><a href="formats.html">Как работаем</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="articles.html">Статьи</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Важное</h4>
+        <p class="small" data-disclaimer style="color:rgba(245,239,232,.6)"></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year></span> Злата</span>
+      <span>Сделано с уважением к тем, кто решается посмотреть внутрь</span>
+    </div>
+  </div>
+</footer>
+
+
+<div class="mobile-cta">
+  <a class="btn btn-ghost" href="schedule.html">Расписание</a>
+  <a class="btn btn-primary" data-tg="Здравствуйте, Злата. Хочу записаться на встречу.">Написать</a>
+</div>
+
+<script src="assets/data.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
