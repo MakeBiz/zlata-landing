@@ -2,327 +2,603 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Злата — психолог. Глубинная работа и терапевтические расстановки</title>
-<meta name="description" content="Работаю с ситуациями, где человек уже много понял головой, но внутри всё равно больно, страшно или не двигается. Находим глубинную причину, снимаем заряд, возвращаем ясность и выбор. Личные встречи и малые группы онлайн.">
-<meta property="og:title" content="Злата — психолог. Глубинная работа и расстановки">
-<meta property="og:description" content="Там, где обычный разговор ходит по кругу. Личные встречи и малые группы онлайн.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Злата Нечаева - психолог. Расстановки и Вселенская терапия</title>
+<meta name="description" content="Работаю с ситуациями, где головой уже всё понято, а внутри всё равно больно, страшно или пусто. Личные расстановки и работа в группе, онлайн.">
+<meta property="og:title" content="Злата Нечаева - психолог">
+<meta property="og:description" content="Там, где разговор уже ходит по кругу. Личные расстановки и работа в группе, онлайн.">
 <meta property="og:image" content="assets/og-image.jpg">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%236B4A3A'/><text y='68' x='50' text-anchor='middle' font-size='58' font-family='Georgia' fill='%23F5EFE8'>З</text></svg>">
-<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%232E5B55'/><text y='68' x='50' text-anchor='middle' font-size='58' font-family='Georgia' fill='%23F8F8F6'>З</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500&family=Golos+Text:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --ground:#F8F8F6;
+    --surface:#FFFFFF;
+    --ink:#1C1F1D;
+    --ink-soft:#404743;
+    --muted:#6B716C;
+    --line:#E3E5E0;
+    --line-strong:#CDD1CB;
+    --accent:#2E5B55;
+    --accent-ink:#20423E;
+    --accent-wash:#EDF3F1;
+    --gold:#9A7B3F;
+    --radius:6px;
+    --maxw:1140px;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#131614;
+      --surface:#1A1E1C;
+      --ink:#ECEEEA;
+      --ink-soft:#C6CCC7;
+      --muted:#98A09A;
+      --line:#2B302D;
+      --line-strong:#3C433F;
+      --accent:#86BCB0;
+      --accent-ink:#A8D3C8;
+      --accent-wash:#1E2A27;
+      --gold:#C6A76A;
+      color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#131614;
+    --surface:#1A1E1C;
+    --ink:#ECEEEA;
+    --ink-soft:#C6CCC7;
+    --muted:#98A09A;
+    --line:#2B302D;
+    --line-strong:#3C433F;
+    --accent:#86BCB0;
+    --accent-ink:#A8D3C8;
+    --accent-wash:#1E2A27;
+    --gold:#C6A76A;
+    color-scheme:dark;
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--ground);
+    color:var(--ink);
+    font-family:"Golos Text","Helvetica Neue",Arial,sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    *{animation-duration:.01ms !important;transition-duration:.01ms !important}
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+  .wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding-inline:20px}
+  .serif{font-family:Literata,Georgia,"Times New Roman",serif;font-weight:400}
+  .eyebrow{
+    font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--muted);font-weight:500;margin:0 0 18px;
+  }
+  h1,h2,h3{margin:0;text-wrap:balance;font-weight:400}
+  h1{font-family:Literata,Georgia,serif;font-size:clamp(34px,5.4vw,58px);line-height:1.1;letter-spacing:-.01em}
+  h2{font-family:Literata,Georgia,serif;font-size:clamp(26px,3.4vw,38px);line-height:1.18}
+  h3{font-family:Literata,Georgia,serif;font-size:19px;line-height:1.3}
+  p{margin:0}
+
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;
+    padding:14px 26px;border-radius:999px;font-size:15px;font-weight:500;
+    text-decoration:none;border:1px solid transparent;cursor:pointer;
+    transition:background .2s ease,color .2s ease,border-color .2s ease;
+    font-family:inherit;
+  }
+  .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+  :root[data-theme="dark"] .btn-primary,
+  .btn-primary{color:var(--surface)}
+  .btn-primary:hover{background:var(--accent-ink);border-color:var(--accent-ink)}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-strong)}
+  .btn-ghost:hover{border-color:var(--ink);background:transparent}
+
+  /* ---------- header ---------- */
+  .site-head{
+    position:sticky;top:env(safe-area-inset-top,0px);z-index:40;
+    background:color-mix(in srgb,var(--ground) 88%,transparent);
+    backdrop-filter:saturate(140%) blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .head-in{display:flex;align-items:center;gap:20px;min-height:66px}
+  .brand{font-family:Literata,Georgia,serif;font-size:17px;text-decoration:none;letter-spacing:.01em;white-space:nowrap}
+  .brand span{color:var(--muted);font-size:11px;letter-spacing:.14em;text-transform:uppercase;display:block;font-family:"Golos Text",sans-serif;margin-top:2px}
+  .nav{margin-left:auto;display:flex;gap:26px;align-items:center}
+  .nav a{font-size:14px;text-decoration:none;color:var(--ink-soft)}
+  .nav a:hover{color:var(--accent)}
+  .head-cta{padding:10px 20px;font-size:14px}
+  .burger{margin-left:auto;display:none;background:none;border:1px solid var(--line-strong);border-radius:999px;padding:9px 16px;font:inherit;font-size:14px;color:var(--ink);cursor:pointer}
+  @media (max-width:900px){
+    .nav{display:none}
+    .head-cta{display:none}
+    .burger{display:block}
+    .nav.open{
+      display:flex;flex-direction:column;align-items:flex-start;gap:14px;
+      position:absolute;left:0;right:0;top:100%;
+      background:var(--surface);border-bottom:1px solid var(--line);
+      padding:20px;margin:0;
+    }
+  }
+
+  /* ---------- hero ---------- */
+  .hero{padding-block:clamp(40px,5.5vw,72px) clamp(34px,4.5vw,58px)}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:clamp(24px,4vw,56px);align-items:start}
+  .hero-col{max-width:620px}
+  .hero-photo{margin:0;width:100%}
+  .hero-photo img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:8px;background:var(--line)}
+  @media (max-width:780px){
+    .hero-grid{grid-template-columns:1fr}
+    .hero-photo{order:-1;max-width:170px}
+  }
+  .hero-lead{font-size:clamp(17px,1.5vw,19px);color:var(--ink-soft);margin-top:20px}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  .hero-how{margin-top:16px;font-size:14px;color:var(--muted)}
+  .hero-facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:30px;padding-top:20px;border-top:1px solid var(--line)}
+  .hero-facts span{font-size:13px;color:var(--muted)}
+  .hero-facts b{font-weight:500;color:var(--ink)}
+
+  /* ---------- generic section ---------- */
+  section{scroll-margin-top:90px}
+  .sec{padding-block:clamp(46px,6vw,84px);border-top:1px solid var(--line)}
+  .sec-head{max-width:46em;margin-bottom:clamp(28px,4vw,48px)}
+  .sec-head p{color:var(--muted);margin-top:14px;font-size:16px}
+
+  /* ---------- fit list ---------- */
+  .fit{display:grid;grid-template-columns:repeat(3,1fr);gap:0 clamp(24px,4vw,52px)}
+  .fit li{list-style:none;padding-block:22px;border-top:1px solid var(--line)}
+  .fit ul{margin:0;padding:0}
+  .fit h3{font-size:18px;margin-bottom:7px}
+  .fit p{color:var(--muted);font-size:15px}
+  @media (max-width:880px){.fit{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:560px){.fit{grid-template-columns:1fr}}
+
+  /* ---------- about ---------- */
+  .about-grid{max-width:680px}
+  .about-body p + p{margin-top:16px}
+  .about-body{color:var(--ink-soft);font-size:16.5px}
+  .pull{
+    font-family:Literata,Georgia,serif;font-size:clamp(20px,2.3vw,25px);line-height:1.38;
+    color:var(--ink);margin:28px 0;padding-left:20px;border-left:2px solid var(--gold);
+  }
+  .inline-link{color:var(--accent);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:1px;font-size:15px}
+  .inline-link:hover{color:var(--accent-ink)}
+
+  /* ---------- steps ---------- */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,36px);counter-reset:s}
+  .step{padding-top:20px;border-top:2px solid var(--ink)}
+  .step .num{font-size:12px;letter-spacing:.14em;color:var(--muted);font-variant-numeric:tabular-nums;display:block;margin-bottom:12px}
+  .step h3{font-size:18px;margin-bottom:8px}
+  .step p{color:var(--muted);font-size:15px}
+  @media (max-width:860px){.steps{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:520px){.steps{grid-template-columns:1fr}}
+
+  /* ---------- formats ---------- */
+  .formats{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .fmt{
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(22px,2.4vw,30px);display:flex;flex-direction:column;gap:12px;
+  }
+  .fmt .meta{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  .fmt p{color:var(--muted);font-size:15px;flex:1}
+  .fmt-foot{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding-top:14px;border-top:1px solid var(--line)}
+  .price{font-family:Literata,Georgia,serif;font-size:21px;font-variant-numeric:tabular-nums}
+  .price-slot{
+    font-family:"Golos Text",sans-serif;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--muted);border:1px dashed var(--line-strong);border-radius:999px;padding:7px 14px;
+  }
+  .price-free{color:var(--accent)}
+  .price .per{font-family:"Golos Text",sans-serif;font-size:13px;color:var(--muted)}
+  .fmt .btn{padding:11px 20px;font-size:14px}
+  @media (max-width:760px){.formats{grid-template-columns:1fr}}
+
+  /* ---------- pay placeholder ---------- */
+  .pay{
+    border:1px dashed var(--line-strong);border-radius:var(--radius);
+    padding:clamp(24px,3vw,36px);display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;
+    background:var(--accent-wash);
+  }
+  .pay h3{margin-bottom:8px}
+  .pay p{color:var(--muted);font-size:15px;max-width:52ch}
+  .pay .tag{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:500;white-space:nowrap}
+  @media (max-width:700px){.pay{grid-template-columns:1fr}}
+
+  /* ---------- diplomas ---------- */
+  .dips{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,2vw,22px)}
+  .dip{background:none;border:0;padding:0;font:inherit;color:inherit;text-align:left;cursor:zoom-in;display:flex;flex-direction:column;gap:10px}
+  .dip img{width:100%;aspect-ratio:1.41/1;object-fit:cover;border:1px solid var(--line);border-radius:4px;background:var(--surface);transition:border-color .2s ease}
+  .dip:hover img{border-color:var(--line-strong)}
+  .dip .cap{font-size:13px;color:var(--muted);line-height:1.4}
+  .dip .cap b{display:block;color:var(--ink);font-weight:500;font-size:14px;margin-bottom:2px}
+  .dip .ph{display:none}
+  .dip.empty{cursor:default}
+  .dip.empty img{display:none}
+  .dip.empty .ph{
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+    width:100%;aspect-ratio:1.41/1;border:1px dashed var(--line-strong);border-radius:4px;
+    background:var(--surface);color:var(--muted);text-align:center;padding:12px;
+  }
+  .dip.empty .ph .ph-t{font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+  .dip.empty .ph code{font-size:11px;color:var(--muted);opacity:.75;word-break:break-all;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  @media (max-width:820px){.dips{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:440px){.dips{grid-template-columns:1fr}}
+
+  .prog{margin-top:clamp(28px,3.4vw,44px);padding-top:24px;border-top:1px solid var(--line)}
+  .prog ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:0 clamp(24px,4vw,52px)}
+  .prog li{padding-block:11px;border-bottom:1px solid var(--line);font-size:15px;color:var(--ink-soft)}
+  .prog li span{color:var(--muted);font-size:13px;display:block}
+  @media (max-width:640px){.prog ul{grid-template-columns:1fr}}
+
+  .lightbox{
+    position:fixed;inset:0;z-index:90;background:rgba(14,17,15,.92);
+    display:flex;align-items:center;justify-content:center;padding:24px;cursor:zoom-out;
+  }
+  .lightbox img{max-width:min(1100px,92vw);max-height:84vh;object-fit:contain;border-radius:4px}
+  .lightbox .lb-cap{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:#D9DEDA;font-size:13px;padding-inline:20px}
+
+  /* ---------- two teasers ---------- */
+  .teasers{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .teaser{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(24px,2.6vw,32px);display:flex;flex-direction:column;gap:12px}
+  .teaser p{color:var(--muted);font-size:15px;flex:1}
+  @media (max-width:760px){.teasers{grid-template-columns:1fr}}
+
+  /* ---------- contact ---------- */
+  .contact-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(28px,5vw,64px);align-items:start}
+  .field{display:flex;flex-direction:column;gap:7px;margin-bottom:18px}
+  .field label{font-size:13px;color:var(--muted)}
+  .field input,.field textarea{
+    font:inherit;font-size:15px;color:var(--ink);background:var(--surface);
+    border:1px solid var(--line-strong);border-radius:4px;padding:12px 14px;width:100%;
+  }
+  .field textarea{min-height:120px;resize:vertical}
+  .consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--muted);margin-bottom:20px}
+  .consent input{margin-top:3px;accent-color:var(--accent);flex:0 0 auto}
+  .form-note{font-size:14px;color:var(--accent);margin-top:14px}
+  .form-err{font-size:14px;color:#B4533A;margin-top:14px}
+  .contact-side p{color:var(--ink-soft);margin-top:14px}
+  .contact-side .small{font-size:14px;color:var(--muted);margin-top:18px}
+  .msgr{display:flex;gap:12px;margin-top:26px}
+  .msgr a{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;border:1px solid var(--line-strong);color:var(--ink);text-decoration:none;transition:border-color .2s ease,color .2s ease,background .2s ease}
+  .msgr a:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-wash)}
+  .msgr svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+  .msgr.sm{margin-top:0}
+  .msgr.sm a{width:38px;height:38px}
+  .msgr.sm svg{width:17px;height:17px}
+  .contact-list{list-style:none;margin:26px 0 0;padding:0}
+  .contact-list li{display:flex;gap:16px;align-items:baseline;padding-block:11px;border-top:1px solid var(--line)}
+  .contact-list li span{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);min-width:86px}
+  .contact-list li a{font-size:16px;color:var(--accent);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:1px}
+  .contact-list li a:hover{color:var(--accent-ink)}
+  @media (max-width:820px){.contact-grid{grid-template-columns:1fr}}
+
+  /* ---------- footer ---------- */
+  .site-foot{border-top:1px solid var(--line);padding-block:40px;margin-top:clamp(40px,5vw,70px)}
+  .foot-in{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-start}
+  .foot-in p{font-size:14px;color:var(--muted)}
+  .foot-links{display:flex;flex-wrap:wrap;gap:18px}
+  .foot-links a{font-size:14px;color:var(--ink-soft);text-decoration:none}
+  .foot-links a:hover{color:var(--accent)}
+  .copy{font-size:13px;color:var(--muted);margin-top:26px}
+  .todo{font-size:12px;color:var(--gold)}
+</style>
 </head>
 <body>
-
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="logo" href="index.html">
-      <span class="logo-mark">З</span>
-      <span class="logo-text">
-        <span class="logo-name">Злата</span>
-        <span class="logo-sub">Психолог</span>
-      </span>
-    </a>
-    <button class="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav class="nav">
-      <a href="index.html" class="active">Главная</a>
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="index.html">Злата Нечаева<span>Психолог</span></a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav">Меню</button>
+    <nav class="nav" id="nav">
       <a href="about.html">Обо мне</a>
-      <a href="formats.html">Как работаем</a>
+      <a href="#formats">Форматы и цены</a>
+      <a href="#diplomas">Дипломы</a>
       <a href="schedule.html">Расписание</a>
       <a href="articles.html">Статьи</a>
-      <a href="contacts.html">Контакты</a>
-      <a class="btn btn-primary" href="#zapis">Записаться</a>
+      <a href="#contact">Контакты</a>
     </nav>
+    <a class="btn btn-primary head-cta" href="#contact">Записаться</a>
   </div>
 </header>
 
-<main>
+<main id="top">
 
-<!-- ============ HERO ============ -->
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <p class="eyebrow">Психолог · 17 лет практики</p>
-      <h1>Там, где разговор уже&nbsp;ходит по&nbsp;кругу</h1>
-      <blockquote class="hero-quote">
-        Я работаю с ситуациями, где человек уже много понял головой, но внутри всё равно больно, страшно, обидно или не двигается. Мы находим глубинную причину, убираем заряд и возвращаем ясность, выбор и движение.
-      </blockquote>
+  <section class="wrap hero">
+    <div class="hero-grid">
+    <div class="hero-col">
+      <p class="eyebrow">Злата Нечаева · психолог · расстановки · онлайн</p>
+      <h1>Там, где разговор уже ходит по кругу</h1>
+      <p class="hero-lead">Работаю с ситуациями, где головой уже всё понято, а внутри всё равно больно, страшно или пусто.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary btn-lg" href="#zapis">Записаться на встречу</a>
-        <a class="btn btn-ghost btn-lg" href="schedule.html">Ближайшие разборы</a>
+        <a class="btn btn-primary" href="#contact">Записаться на встречу</a>
+        <a class="btn btn-ghost" href="#formats">Форматы и цены</a>
+      </div>
+      <p class="hero-how">Запись через форму внизу или сразу в <a class="inline-link" href="https://t.me/zlatanechaeva">Telegram</a>. Отвечаю лично, обычно в течение дня.</p>
+      <div class="hero-facts">
+        <span><b>17 лет</b> в психологии</span>
+        <span><b>Расстановки</b> и Вселенская терапия</span>
+        <span><b>Онлайн</b> из любой точки мира</span>
       </div>
     </div>
-    <div class="hero-photo">
-      <img src="assets/zlata-hero.webp" alt="Злата — психолог, ведущая терапевтических расстановок" width="900" height="1150">
-      <div class="hero-badge">
-        <strong>17 лет</strong>
-        исследую человеческую природу и психику
+    <figure class="hero-photo">
+      <img src="assets/portrait.jpg" alt="Злата Нечаева" width="660" height="880">
+    </figure>
+    </div>
+  </section>
+
+  <section class="wrap sec" id="fit">
+    <div class="sec-head">
+      <h2>Кому это подходит</h2>
+      <p>Шесть ситуаций, с которыми приходят чаще всего. Если узнали себя хотя бы в одной, нам есть о чём поговорить.</p>
+    </div>
+    <ul class="fit">
+      <li><h3>Всё понятно головой</h3><p>Вы разложили ситуацию по полочкам, а легче не стало.</p></li>
+      <li><h3>Разговоры не помогают</h3><p>Обсудили с близкими сто раз, и каждый раз по кругу.</p></li>
+      <li><h3>Обида не отпускает</h3><p>Прошли годы, а внутри всё ещё держит и тянет назад.</p></li>
+      <li><h3>Застряли в выборе</h3><p>Оба варианта кажутся правильными и оба пугают.</p></li>
+      <li><h3>Живёте не своей жизнью</h3><p>Со стороны всё хорошо, а радости и смысла нет.</p></li>
+      <li><h3>Тело говорит раньше вас</h3><p>Ком в горле, тяжесть, бессонница без видимой причины.</p></li>
+    </ul>
+  </section>
+
+  <section class="wrap sec" id="about">
+    <div class="about-grid">
+      <div>
+        <p class="eyebrow">Кто я</p>
+        <h2>Человек важнее техники</h2>
+        <div class="about-body" style="margin-top:20px">
+          <p>Семнадцать лет я исследую человеческую природу. У меня два образования, финансовое и психолого-педагогическое. До психологии были пекарня, крипта и трейдинг, и это тоже про людей: про страх, жадность, надежду и про то, как человек на самом деле принимает решения.</p>
+          <p>В работе использую расстановки, метафорические карты, работу с телом, схемотерапию и НЛП. Но метод всегда вторичен. Ко мне приходят не за советом, а за состоянием, в котором человек начинает думать глубже и слышать себя.</p>
+        </div>
+        <p class="pull">Мой главный талант - создавать пространство, где человеку не страшно честно посмотреть на себя.</p>
+        <a class="inline-link" href="about.html">Подробнее обо мне</a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ ЭТО ПРО ВАС ============ -->
-<section class="bg-sand">
-  <div class="wrap">
-    <div class="section-head center reveal">
-      <p class="eyebrow">Кому это подходит</p>
-      <h2>Возможно, вы себя узнаете</h2>
-      <p class="lead">Ко мне приходят не за советами. Советы вы уже слышали — и, скорее всего, они не помогли.</p>
-    </div>
-    <div class="grid grid-3">
-      <article class="card reveal">
-        <div class="card-icon"><svg class="ic-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M15.5 21v-2.6c1.9-1.1 3.2-3 3.4-5.3h.9c.5 0 .8-.5.6-.9l-1.4-2.7A7.6 7.6 0 0 0 11.4 3 7.5 7.5 0 0 0 4 10.6c0 2.4 1.1 4.5 2.8 5.9V21"/><circle cx="12" cy="10.6" r="1"/></svg></div>
-        <h3>Всё понятно головой</h3>
-        <p>Вы много читали, анализировали, объясняли себе. Разложили по полочкам. А внутри по-прежнему держит — и от этого только хуже.</p>
-      </article>
-      <article class="card reveal">
-        <div class="card-icon"><svg class="ic-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M4.5 9.5a7.5 7.5 0 1 1 .6 6"/><path d="M2.6 12.2 5 15.6l3.5-2"/></svg></div>
-        <h3>Разговоры не помогают</h3>
-        <p>С подругой, с психологом, сами с собой — раз за разом одно и то же. Разговор ходит по кругу и не выводит никуда.</p>
-      </article>
-      <article class="card reveal">
-        <div class="card-icon"><svg class="ic-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7.5-4.6-7.5-9.6A4.4 4.4 0 0 1 12 7.6a4.4 4.4 0 0 1 7.5 2.8c0 5-7.5 9.6-7.5 9.6z"/><path d="M9.4 12.6h1.3l.9-2 1.2 3.4.9-1.4h1.6"/></svg></div>
-        <h3>Обида не отпускает</h3>
-        <p>Предательство, измена, старая история с родителями. Умом простили давно. Внутри — нет.</p>
-      </article>
-      <article class="card reveal">
-        <div class="card-icon"><svg class="ic-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M12 21V12"/><path d="M12 12 6.5 6.5M12 12l5.5-5.5"/><circle cx="5.4" cy="5.4" r="1.9"/><circle cx="18.6" cy="5.4" r="1.9"/></svg></div>
-        <h3>Застряли в выборе</h3>
-        <p>Решение назрело, а сделать шаг не получается. Кажется, что это страх. Часто это что-то совсем другое.</p>
-      </article>
-      <article class="card reveal">
-        <div class="card-icon"><svg class="ic-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M4 20h16"/><path d="M14.5 20V4.8a.8.8 0 0 0-1-.8l-5 1.4a.8.8 0 0 0-.6.8V20"/><circle cx="12" cy="12.4" r=".9" fill="currentColor" stroke="none"/></svg></div>
-        <h3>Живёте не своей жизнью</h3>
-        <p>Всё вроде правильно, а внутри пусто. Однажды вы выбрали не то, что хотели, — и с тех пор живёте этим выбором.</p>
-      </article>
-      <article class="card reveal">
-        <div class="card-icon"><svg class="ic-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><circle cx="12" cy="4.8" r="2.1"/><path d="M12 7.2v7.4M12 14.6 8.9 21M12 14.6 15.1 21M7.4 10.2 12 9l4.6 1.2"/></svg></div>
-        <h3>Тело говорит раньше вас</h3>
-        <p>Сжимается горло, каменеет спина, пропадает дыхание. Тело реагирует на то, что голова ещё не признала.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============ О ЗЛАТЕ ============ -->
-<section>
-  <div class="wrap split">
-    <div class="reveal">
-      <img src="assets/zlata-portrait.webp" alt="Злата" width="470" height="470">
-    </div>
-    <div class="reveal">
-      <p class="eyebrow">Кто я</p>
-      <h2>Я не влюблена в методы. Я влюблена в человека</h2>
-      <p>Семнадцать лет я исследую человеческую природу. Начала с раннего развития детей и работы с родителями, пришла к глубинной работе со взрослыми. У меня два образования: финансовое и психолого-педагогическое — и, кажется, первое помогает мне понимать тему денег не хуже второго.</p>
-      <p>Я беру всё, что помогает увидеть человека: психологию, телесные практики, расстановки, работу с образами и метафорическими картами, философию. Ни одна школа не стала для меня религией. Человек важнее техники.</p>
-      <p class="mb-0"><a href="about.html">Подробнее обо мне и о том, как я работаю →</a></p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ КАК ПРОХОДИТ ============ -->
-<section class="bg-sand">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <p class="eyebrow">Как это устроено</p>
+  <section class="wrap sec" id="how">
+    <div class="sec-head">
       <h2>Что происходит на встрече</h2>
-      <p class="lead">Никакой мистики и никаких диагнозов. Только внимательный, честный разговор — и то, что за ним открывается.</p>
+      <p>Никаких анкет и тестов. Четыре шага, которые проходим вместе за одну встречу.</p>
     </div>
     <div class="steps">
-      <div class="step reveal">
-        <h3>Говорим о том, что происходит</h3>
-        <p>Вы рассказываете свою ситуацию так, как получается. Не нужно готовиться, формулировать красиво или «правильно» понимать себя заранее.</p>
-      </div>
-      <div class="step reveal">
-        <h3>Ищем, где на самом деле держится</h3>
-        <p>За темой денег может обнаружиться право жить по-своему. За обидой — способ не отпускать. Я слышу не проблему, а систему: где живёт чувство, что его питает, какая ранняя сцена его держит.</p>
-      </div>
-      <div class="step reveal">
-        <h3>Снимаем заряд</h3>
-        <p>Здесь работает то, что подходит именно вам: расстановочные техники и заместители, метафорические карты, телесное внимание, проживание вместо объяснения. Иногда изменения происходят за считаные минуты.</p>
-      </div>
-      <div class="step reveal">
-        <h3>Возвращаем выбор</h3>
-        <p>Цель не в том, чтобы стать другим человеком. А в том, чтобы вспомнить, кто вы, когда перестаёте жить из страха. Дальше вы решаете сами — и уже можете решать.</p>
-      </div>
+      <div class="step"><span class="num">01</span><h3>Говорим о ситуации</h3><p>Вы рассказываете так, как рассказывается. Я слушаю и задаю вопросы.</p></div>
+      <div class="step"><span class="num">02</span><h3>Ищем систему</h3><p>Смотрим, какая расстановка сил держит проблему на месте.</p></div>
+      <div class="step"><span class="num">03</span><h3>Снимаем заряд</h3><p>Работаем с тем, что держит: с обидой, виной, страхом, долгом.</p></div>
+      <div class="step"><span class="num">04</span><h3>Возвращаем выбор</h3><p>Вы уходите не с советом, а с другим состоянием и своим решением.</p></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ ФОРМАТЫ ============ -->
-<section>
-  <div class="wrap">
-    <div class="section-head reveal">
-      <p class="eyebrow">Форматы</p>
-      <h2>Как мы можем работать</h2>
+  <section class="wrap sec" id="formats">
+    <div class="sec-head">
+      <h2>Форматы и цены</h2>
+      <p>Если не знаете, что выбрать, начните с открытого разбора. Он бесплатный и ни к чему не обязывает.</p>
     </div>
-    <div class="grid grid-3">
-      <article class="card format-card reveal">
-        <h3>Личная встреча</h3>
-        <p>Один на один, онлайн, 60–90 минут. Подходит, если есть ситуация, которую вы уже много раз обдумывали, но внутри она всё ещё держит.</p>
-        <div class="format-meta"><span><svg class="ic-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 1.8"/></svg> 60–90 минут</span><span><svg class="ic-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.6"/><path d="M3.4 12h17.2M12 3.4c2.4 2.6 2.4 14.6 0 17.2M12 3.4c-2.4 2.6-2.4 14.6 0 17.2"/></svg> Онлайн</span></div>
+    <div class="formats">
+      <article class="fmt">
+        <span class="meta">Онлайн · 60-90 минут · один на один</span>
+        <h3>Личная расстановка</h3>
+        <p>Для тех, кто хочет разобрать свою историю приватно и глубоко. Работаем с причиной, а не с симптомом.</p>
+        <div class="fmt-foot"><span class="price">10 000 ₽</span><a class="btn btn-primary" href="#contact">Записаться</a></div>
       </article>
-      <article class="card format-card reveal">
-        <h3>Малая группа</h3>
-        <p>До шести человек. Через тему, разборы и заместителей видно то, что в одиночку разглядеть трудно. Камерно — чтобы хватило внимания каждому.</p>
-        <div class="format-meta"><span><svg class="ic-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 1.8"/></svg> 3–4 часа</span><span><svg class="ic-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.6"/><path d="M3.4 12h17.2M12 3.4c2.4 2.6 2.4 14.6 0 17.2M12 3.4c-2.4 2.6-2.4 14.6 0 17.2"/></svg> До 6 человек</span></div>
+      <article class="fmt">
+        <span class="meta">Онлайн · 3-4 часа · до шести человек</span>
+        <h3>Работа в группе</h3>
+        <p>Разборы с заместителями. Свою ситуацию видно со стороны, и это меняет больше, чем часы объяснений.</p>
+        <div class="fmt-foot"><span class="price">15 000 ₽</span><a class="btn btn-primary" href="#contact">Записаться</a></div>
       </article>
-      <article class="card format-card reveal">
+      <article class="fmt">
+        <span class="meta">Добавление в группу на месяц</span>
         <h3>Участие заместителем</h3>
-        <p>Можно прийти в группу не со своим запросом, а заместителем. Это не «помощь другому»: почти всегда поднимаются собственные процессы и приходит своё.</p>
-        <div class="format-meta"><span><svg class="ic-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 1.8"/></svg> 3–4 часа</span><span><svg class="ic-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.6"/><path d="M3.4 12h17.2M12 3.4c2.4 2.6 2.4 14.6 0 17.2M12 3.4c-2.4 2.6-2.4 14.6 0 17.2"/></svg> Свободный вход</span></div>
+        <p>Попробовать метод без собственного запроса. Вы стоите в чужих расстановках, и это почти всегда поднимает собственные процессы.</p>
+        <div class="fmt-foot"><span class="price">3 000 ₽ <span class="per">в месяц</span></span><a class="btn btn-primary" href="#contact">Записаться</a></div>
       </article>
-      <article class="card format-card reveal">
+      <article class="fmt">
+        <span class="meta">Онлайн · 40-60 минут</span>
         <h3>Открытый разбор</h3>
-        <p>Бесплатная встреча, где я беру одну тему и разбираю её глубже обычного разговора. Хороший способ посмотреть, как я работаю, ничего не решая заранее.</p>
-        <div class="format-meta"><span><svg class="ic-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 1.8"/></svg> 40–60 минут</span><span><svg class="ic-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.6"/><path d="M3.4 12h17.2M12 3.4c2.4 2.6 2.4 14.6 0 17.2M12 3.4c-2.4 2.6-2.4 14.6 0 17.2"/></svg> Бесплатно</span></div>
-      </article>
-      <article class="card format-card reveal">
-        <h3>Сопровождение</h3>
-        <p>Несколько встреч подряд, когда тема большая и хочется идти последовательно, а не выхватывать по кусочку.</p>
-        <div class="format-meta"><span><svg class="ic-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.4V12l3 1.8"/></svg> По договорённости</span><span><svg class="ic-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.6"/><path d="M3.4 12h17.2M12 3.4c2.4 2.6 2.4 14.6 0 17.2M12 3.4c-2.4 2.6-2.4 14.6 0 17.2"/></svg> Онлайн</span></div>
-      </article>
-      <article class="card format-card reveal" style="background:var(--sand-200);border-color:var(--sand-300)">
-        <h3>Не знаете, что выбрать?</h3>
-        <p>Это нормально и совершенно не обязательно решать заранее. Напишите пару строк о том, что происходит, — я подскажу, какой формат подойдёт.</p>
-        <div class="format-meta"><a data-tg="Здравствуйте, Злата. Не знаю, какой формат мне подойдёт. Расскажу, что происходит.">Написать в Telegram →</a></div>
+        <p>Знакомство с методом. Можно присутствовать анонимно, с выключенной камерой, просто посмотреть.</p>
+        <div class="fmt-foot"><span class="price price-free">Бесплатно</span><a class="btn btn-ghost" href="#contact">Прийти</a></div>
       </article>
     </div>
-    <p class="center mt-3 muted">Подробнее о каждом формате — <a href="formats.html">на отдельной странице</a>. Стоимость называю в переписке: она зависит от формата и того, что вам сейчас нужно.</p>
-  </div>
-</section>
 
-<!-- ============ РАСПИСАНИЕ ============ -->
-<section class="bg-sand">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <p class="eyebrow">Календарь</p>
-      <h2>Ближайшие встречи</h2>
-      <p class="lead">Открытые разборы проходят по понедельникам. Прийти можно молча — просто послушать.</p>
-    </div>
-    <div data-events="3" class="reveal"></div>
-    <p class="mt-3"><a href="schedule.html">Всё расписание и окна личных встреч →</a></p>
-  </div>
-</section>
-
-<!-- ============ СТАТЬИ ============ -->
-<section>
-  <div class="wrap">
-    <div class="section-head reveal">
-      <p class="eyebrow">Тексты</p>
-      <h2>Статьи и разборы</h2>
-      <p class="lead">Пишу о том, как устроены внутренние застревания — без обещаний и без эзотерики.</p>
-    </div>
-    <div class="grid grid-3 reveal" data-posts="3"></div>
-    <p class="mt-3"><a href="articles.html">Все материалы →</a></p>
-  </div>
-</section>
-
-<!-- ============ ЗАПИСЬ ============ -->
-<section class="bg-sand-2" id="zapis">
-  <div class="wrap contact-grid">
-    <div class="reveal">
-      <p class="eyebrow">Запись</p>
-      <h2>Напишите мне</h2>
-      <p class="lead">Не нужно формулировать запрос красиво и «правильно». Достаточно пары строк о том, что происходит, — дальше разберёмся вместе.</p>
-
-      <div id="contact-lines" class="mt-3"></div>
-
-      <div class="disclaimer mt-2" data-disclaimer></div>
-    </div>
-
-    <div class="reveal">
-      <div class="form-card">
-        <form id="lead-form" method="POST">
-          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-
-          <div class="field">
-            <label for="f-name">Как вас зовут?</label>
-            <input type="text" id="f-name" name="name" placeholder="Имя" autocomplete="name">
-            <div class="err">Как к вам обращаться?</div>
-          </div>
-
-          <div class="field">
-            <label for="f-contact">Как с вами связаться? <span class="hint">Telegram, почта или телефон</span></label>
-            <input type="text" id="f-contact" name="contact" placeholder="@ник, почта или +7…">
-            <div class="err">Оставьте контакт — иначе я не смогу ответить</div>
-          </div>
-
-          <div class="field">
-            <label for="f-about">Что происходит? <span class="hint">Необязательно, но помогает</span></label>
-            <textarea id="f-about" name="about" placeholder="Пара строк своими словами. Совсем не обязательно объяснять всё — достаточно того, с чем сейчас тяжело."></textarea>
-          </div>
-
-          <label class="consent">
-            <input type="checkbox" name="consent" value="да">
-            <span>Согласен(-на) на обработку моих данных для ответа на обращение. Всё, что вы напишете, останется между нами.</span>
-          </label>
-
-          <button type="submit" class="btn btn-primary btn-block btn-lg">Отправить</button>
-          <p class="small muted center mt-2 mb-0">Отвечаю обычно в течение дня.</p>
-        </form>
-
-        <div id="form-success" class="form-success">
-          <div class="tick">✓</div>
-          <h3>Спасибо, я получила</h3>
-          <p class="muted">Отвечу в течение дня. Если вдруг не отвечу — напишите, пожалуйста, в Telegram: иногда письма теряются, а вы важнее письма.</p>
-          <a class="btn btn-ghost" data-tg="Здравствуйте, Злата. Отправила заявку с сайта.">Написать в Telegram</a>
-        </div>
+    <div class="pay" style="margin-top:22px" hidden>
+      <div>
+        <h3>Оплата картой на сайте</h3>
+        <p>Здесь встанет форма оплаты: сумма, телефон, кнопка. Появится после подключения эквайринга, место под неё уже готово.</p>
       </div>
+      <span class="tag">Место зарезервировано</span>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ РЕСУРСЫ ============ -->
-<section class="tight">
-  <div class="wrap">
-    <div class="section-head center reveal" style="margin-bottom:28px">
-      <h2 style="font-size:clamp(1.4rem,2.6vw,1.9rem)">Где меня ещё читать</h2>
+  <section class="wrap sec" id="diplomas">
+    <div class="sec-head">
+      <h2>Обучение и дипломы</h2>
+      <p>Метод «Вселенская терапия» Леонида Тальписа и практика НЛП. Девять документов. Нажмите на любой, чтобы рассмотреть.</p>
     </div>
-    <div class="links-grid reveal" data-links></div>
-  </div>
-</section>
+    <div class="dips">
+      <button class="dip" data-src="assets/diplom-nlp.jpg" data-cap="НЛП-Практик · Психология Нового Поколения · 2022">
+        <img src="assets/diplom-nlp.jpg" alt="Сертификат НЛП-Практик, 2022" loading="lazy">
+        <span class="cap"><b>НЛП-Практик</b>Психология Нового Поколения, 2022</span>
+      </button>
+      <button class="dip" data-src="assets/diplom-vt.jpg" data-cap="Семинар «Вселенская терапия» · Леонид Тальпис · октябрь 2025">
+        <img src="assets/diplom-vt.jpg" alt="Сертификат: семинар Вселенская терапия" loading="lazy">
+        <span class="cap"><b>Вселенская терапия</b>Леонид Тальпис, октябрь 2025</span>
+      </button>
+      <button class="dip" data-src="assets/diplom-tochka.jpg" data-cap="Семинар «Точка сборки» · Леонид Тальпис · октябрь 2025">
+        <img src="assets/diplom-tochka.jpg" alt="Сертификат: семинар Точка сборки" loading="lazy">
+        <span class="cap"><b>Точка сборки</b>Леонид Тальпис, октябрь 2025</span>
+      </button>
+      <button class="dip" data-src="assets/diplom-dop1.jpg" data-cap="Семинар «Дополнение 1. Вселенская терапия» · Леонид Тальпис · апрель 2025">
+        <img src="assets/diplom-dop1.jpg" alt="Сертификат: Дополнение 1" loading="lazy">
+        <span class="cap"><b>Дополнение 1</b>Вселенская терапия, апрель 2025</span>
+      </button>
+      <button class="dip" data-src="assets/diplom-dop2.jpg" data-cap="Семинар «Дополнение 2. Вселенская терапия» · Леонид Тальпис · апрель 2025">
+        <img src="assets/diplom-dop2.jpg" alt="Сертификат: Дополнение 2" loading="lazy">
+        <span class="cap"><b>Дополнение 2</b>Вселенская терапия, апрель 2025</span>
+      </button>
+      <button class="dip" data-src="assets/diplom-dop3.jpg" data-cap="Семинар «Дополнение 3. Вселенская терапия» · Леонид Тальпис · ноябрь 2025">
+        <img src="assets/diplom-dop3.jpg" alt="Сертификат: Дополнение 3" loading="lazy">
+        <span class="cap"><b>Дополнение 3</b>Вселенская терапия, ноябрь 2025</span>
+      </button>
+      <button class="dip" data-src="assets/diplom-dop4.jpg" data-cap="Семинар «Дополнение 4. Вселенская терапия» · Леонид Тальпис · ноябрь 2025">
+        <img src="assets/diplom-dop4.jpg" alt="Сертификат: Дополнение 4" loading="lazy">
+        <span class="cap"><b>Дополнение 4</b>Вселенская терапия, ноябрь 2025</span>
+      </button>
+      <button class="dip" data-src="assets/diplom-dop5.jpg" data-cap="Семинар «Дополнение 5. Вселенская терапия» · Леонид Тальпис · ноябрь 2025">
+        <img src="assets/diplom-dop5.jpg" alt="Сертификат: Дополнение 5" loading="lazy">
+        <span class="cap"><b>Дополнение 5</b>Вселенская терапия, ноябрь 2025</span>
+      </button>
+      <button class="dip" data-src="assets/diplom-dop6.jpg" data-cap="Семинар «Дополнение 6. Вселенская терапия» · Леонид Тальпис · ноябрь 2025">
+        <img src="assets/diplom-dop6.jpg" alt="Сертификат: Дополнение 6" loading="lazy">
+        <span class="cap"><b>Дополнение 6</b>Вселенская терапия, ноябрь 2025</span>
+      </button>
+    </div>
+  </section>
 
+  <section class="wrap sec">
+    <div class="teasers">
+      <article class="teaser" id="schedule">
+        <p class="eyebrow" style="margin-bottom:0">Ближайшие встречи</p>
+        <h3>Открытые разборы по понедельникам</h3>
+        <p>Даты, время и свободные места смотрите в расписании. Прошедшие встречи уходят из списка сами.</p>
+        <div><a class="inline-link" href="schedule.html">Смотреть расписание</a></div>
+      </article>
+      <article class="teaser" id="articles">
+        <p class="eyebrow" style="margin-bottom:0">Статьи и разборы</p>
+        <h3>Пишу о том, что вижу в работе</h3>
+        <p>Про обиду, про выбор, про деньги и про тело. Без терминов и без обещаний быстрого счастья.</p>
+        <div><a class="inline-link" href="articles.html">Читать статьи</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="wrap sec" id="contact"><span id="zapis"></span>
+    <div class="contact-grid">
+      <div class="contact-side">
+        <p class="eyebrow">Контакты</p>
+        <h2>Написать мне</h2>
+        <p>Расскажите в двух словах, что происходит. Я отвечу лично и предложу формат, который подойдёт именно вам.</p>
+        <div class="msgr">
+          <a href="https://t.me/zlatanechaeva" title="Telegram" aria-label="Написать в Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4Z"/></svg></a>
+          <a href="https://wa.me/79219820942" title="WhatsApp" aria-label="Написать в WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 21l1.9-5.6A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.9 9.1c.2 1.4.9 2.7 1.9 3.7 1 1 2.3 1.7 3.7 1.9l.9-1.2 1.6.8c-.2.9-1 1.5-1.9 1.5a7 7 0 0 1-6.9-6.9c0-.9.6-1.7 1.5-1.9l.8 1.6Z"/></svg></a>
+        </div>
+        <p class="small">Отвечаю обычно в течение дня. Если удобнее сразу в мессенджере, кнопки выше.</p>
+      </div>
+      <form id="lead-form" novalidate>
+        <div class="field">
+          <label for="f-name">Как вас зовут</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Имя">
+        </div>
+        <div class="field">
+          <label for="f-contact">Как с вами связаться</label>
+          <input id="f-contact" name="contact" type="text" placeholder="Telegram, почта или телефон">
+        </div>
+        <div class="field">
+          <label for="f-text">Что происходит</label>
+          <textarea id="f-text" name="text" placeholder="Пара фраз о ситуации. Подробности не нужны."></textarea>
+        </div>
+        <label class="consent" for="f-consent">
+          <input id="f-consent" name="consent" type="checkbox">
+          <span>Согласен на обработку персональных данных</span>
+        </label>
+        <button class="btn btn-primary" type="submit">Отправить</button>
+        <p class="form-note" id="form-note" hidden>Спасибо! Сейчас откроется Telegram с готовым сообщением, останется нажать «Отправить».</p>
+        <p class="form-err" id="form-err" hidden>Оставьте, пожалуйста, способ связи и отметьте согласие, иначе я не смогу ответить.</p>
+      </form>
+    </div>
+  </section>
 </main>
 
-<footer class="site-footer">
+<footer class="site-foot">
   <div class="wrap">
-    <div class="footer-grid">
+    <div class="foot-in">
       <div>
-        <h4>Злата — психолог</h4>
-        <p style="margin-bottom:14px">Глубинная работа с причиной, терапевтические расстановки, малые группы. Онлайн, по-русски — из любой точки мира.</p>
-        <a class="btn btn-ghost" style="color:var(--sand-100);border-color:rgba(245,239,232,.4)" data-tg="Здравствуйте, Злата. Хочу записаться на встречу.">Написать в Telegram</a>
+        <p style="color:var(--ink);font-family:Literata,Georgia,serif;font-size:17px">Злата Нечаева</p>
+        <p>Психолог. Расстановки, Вселенская терапия, НЛП.<br>Онлайн из любой точки мира.</p>
       </div>
-      <div>
-        <h4>Разделы</h4>
-        <ul>
-          <li><a href="about.html">Обо мне</a></li>
-          <li><a href="formats.html">Как работаем</a></li>
-          <li><a href="schedule.html">Расписание</a></li>
-          <li><a href="articles.html">Статьи</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
+      <div class="foot-links">
+        <a href="about.html">Обо мне</a>
+        <a href="#formats">Форматы и цены</a>
+        <a href="#diplomas">Дипломы</a>
+        <a href="schedule.html">Расписание</a>
+        <a href="articles.html">Статьи</a>
+        <a href="#contact">Контакты</a>
       </div>
-      <div>
-        <h4>Важное</h4>
-        <p class="small" data-disclaimer style="color:rgba(245,239,232,.6)"></p>
+      <div class="msgr sm">
+        <a href="https://t.me/zlatanechaeva" title="Telegram" aria-label="Написать в Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4Z"/></svg></a>
+        <a href="https://wa.me/79219820942" title="WhatsApp" aria-label="Написать в WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 21l1.9-5.6A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.9 9.1c.2 1.4.9 2.7 1.9 3.7 1 1 2.3 1.7 3.7 1.9l.9-1.2 1.6.8c-.2.9-1 1.5-1.9 1.5a7 7 0 0 1-6.9-6.9c0-.9.6-1.7 1.5-1.9l.8 1.6Z"/></svg></a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© <span data-year></span> Злата</span>
-      <span>Сделано с уважением к тем, кто решается посмотреть внутрь</span>
-    </div>
+    <p class="copy">© 2026 Злата Нечаева</p>
   </div>
 </footer>
 
+<script>
+(function(){
+  var burger = document.getElementById('burger');
+  var nav = document.getElementById('nav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if (e.target.tagName === 'A') { nav.classList.remove('open'); burger.setAttribute('aria-expanded','false'); }
+  });
 
-<div class="mobile-cta">
-  <a class="btn btn-ghost" href="schedule.html">Расписание</a>
-  <a class="btn btn-primary" data-tg="Здравствуйте, Злата. Хочу записаться на встречу.">Написать</a>
-</div>
+  var box = null;
+  function closeBox(){ if(box){ box.remove(); box = null; document.removeEventListener('keydown', onKey); } }
+  function onKey(e){ if(e.key === 'Escape') closeBox(); }
+  document.querySelectorAll('.dip').forEach(function(btn){
+    var im = btn.querySelector('img');
+    im.addEventListener('error', function(){ btn.classList.add('empty'); });
+    if (im.complete && im.naturalWidth === 0) btn.classList.add('empty');
+    btn.addEventListener('click', function(){
+      if (btn.classList.contains('empty')) return;
+      closeBox();
+      box = document.createElement('div');
+      box.className = 'lightbox';
+      var img = document.createElement('img');
+      img.src = btn.getAttribute('data-src');
+      img.alt = btn.getAttribute('data-cap');
+      var cap = document.createElement('div');
+      cap.className = 'lb-cap';
+      cap.textContent = btn.getAttribute('data-cap');
+      box.appendChild(img); box.appendChild(cap);
+      box.addEventListener('click', closeBox);
+      document.body.appendChild(box);
+      document.addEventListener('keydown', onKey);
+    });
+  });
 
-<script src="assets/data.js"></script>
-<script src="assets/site.js"></script>
+  var form = document.getElementById('lead-form');
+  var note = document.getElementById('form-note');
+  var err = document.getElementById('form-err');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = form.elements['name'].value.trim();
+    var contact = form.elements['contact'].value.trim();
+    var text = form.elements['text'].value.trim();
+    var consent = form.elements['consent'].checked;
+    if (!contact || !consent) { err.hidden = false; note.hidden = true; return; }
+    err.hidden = true;
+    var msg = 'Здравствуйте, Злата! Заявка с сайта.' +
+      (name ? '\nИмя: ' + name : '') +
+      '\nСвязь: ' + contact +
+      (text ? '\nЧто происходит: ' + text : '');
+    note.hidden = false;
+    window.location.href = 'https://t.me/zlatanechaeva?text=' + encodeURIComponent(msg);
+  });
+})();
+</script>
 </body>
 </html>
